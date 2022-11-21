@@ -7,7 +7,6 @@ html{
 }
 body{
     font-family: 'tahoma';
-    background:linear-gradient(#f7f7a294, #5d5a9954);
 }
 .control-buttons{
     position: fixed;
