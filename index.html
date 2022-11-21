@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+
+    <div class="proper">
+        <span>you are successed ^^ <button>Again</button></span>
+    </div>
+
+    <!-- information -->
+    <div class="info-container">
+        <span class="name" id="name">Hello :</span>
+        <span class="trail" id="trails"> Wrong Trails : <span>0</span> </span>
+    </div>
+    <!-- game -->
+    <div class="game-block">
+        <div class="cards" data-technology= 'bink'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="cards" data-technology= 'bink'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="cards" data-technology= 'yellow'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img2.jpg" alt="">
+            </div>
+        </div>
+        <div class="cards" data-technology= 'yellow'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="cards" data-technology= 'blue'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img3.jpg" alt="">
+            </div>
+        </div>
+        <div class="cards" data-technology= 'blue'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="cards" data-technology= 'green'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img4.jpg" alt="">
+            </div>
+        </div>
+        <div class="cards" data-technology= 'green'>
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="img/img4.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <audio id="success" src="audio/success.wav" preload="auto"></audio>
+    <audio id="failed" src="audio/failed.wav" preload="auto"></audio>
+    
+    <script src="game.js"></script>
+</body>
+</html>

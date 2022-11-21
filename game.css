@@ -1,0 +1,133 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'tahoma';
+    background:linear-gradient(#f7f7a294, #5d5a9954);
+}
+.control-buttons{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #9fbdc4cf;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.control-buttons span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 25px;
+    background-color: #ff8b8b;
+    cursor: pointer;
+    text-align: center;
+}
+
+.proper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #8b8b8bcf;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.proper span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 25px;
+    background-color: #ff8b8b;
+    cursor: pointer;
+    text-align: center;
+}
+.proper span button{
+    font-size: 25px;
+    background: #f7f7a2;
+    border: transparent;
+    padding: 6px 20px;
+    margin-left: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.info-container{
+    width: 650px;
+    box-shadow: inset 3px 3px 10px #ff8b8b, inset -3px -3px 10px #ff8b8b;
+    margin: 50px auto 8px;
+    padding: 10px 25px;
+}
+.info-container #trails{
+    float: right;
+}
+
+.game-block{
+    width: 900px;
+    margin: auto;
+    padding: 36px 0;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game-block.no-clicking{
+    pointer-events: none;
+}
+
+.game-block .cards{
+    position: relative;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    height: 200px;
+    flex: 0 0 200px;
+    margin: 0 10px 10px;
+    cursor: pointer;
+}
+
+.game-block .cards .front{
+    background-color: #cceaf7;
+    line-height: 200px;
+}
+.game-block .cards .front::before{
+    content: '?';
+    font-weight: bold;
+    font-size: 140px;
+}
+
+.game-block .cards .back{
+    transform: rotateY(180deg)
+}
+.game-block .cards .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.game-block .cards .back img{
+    width: 200px;
+    height: 200px;
+    border: 3px dashed #423c66;
+    margin-right: 10px;
+    border-radius: 11px;
+}
+
+.game-block .cards.is-flipped,
+.game-block .cards.has-match {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
