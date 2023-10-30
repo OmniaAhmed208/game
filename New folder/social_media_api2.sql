@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2023 at 04:35 PM
+-- Generation Time: Oct 30, 2023 at 04:44 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -50,7 +50,9 @@ CREATE TABLE `apis` (
 INSERT INTO `apis` (`id`, `creator_id`, `account_type`, `account_id`, `account_name`, `email`, `account_pic`, `account_link`, `token`, `token_secret`, `update_interval`, `created_at`, `updated_at`) VALUES
 (2, 1, 'twitter', '1708817086653386752', 'EvolveTeck', 'EvolveTeck', NULL, 'https://twitter.com/intent/user?user_id=1708817086653386752', '1708817086653386752-WRyD6t3aHPtXsqQeyjokEhdjOlnrYq', '8MdlSMKR1hkgAsOKTPhMttQTZKFRoGmTs4GrPYFMEokNY', 2000, '2023-10-25 07:05:15', '2023-10-25 09:15:43'),
 (3, 1, 'youtube', 'UCDtui0aBpRnx1eNAzq7eUHQ', 'evovle inc', 'evovle inc', 'https://yt3.ggpht.com/ytc/APkrFKZhta5mRe5QbypayrwKrcYOl2L65mX_uncGM8F4yVLU3GonpgFTrQ6j22XgIdLg=s240-c-k-c0xffffffff-no-rj-mo', 'https://www.youtube.com/channel/UCDtui0aBpRnx1eNAzq7eUHQ', 'ya29.a0AfB_byB9ZUyzCgAo7b5FlMknnV7SYCrX4pzdzpaoFipC-TEMt6KCD4v-JXsvVoPi_usZwGMVp-agZb8wHLbpiCP8Td-FjN9FBdM-EYMznCVO0FqqpwoxmEwLEttzPlvUHjz-L6KKeMs64dnJuwqwZE6u0apzFxSAyyemaCgYKAW0SARMSFQGOcNnCiGhnaAspFUBNCMq', '1//03OvEbi37WB3TCgYIARAAGAMSNwF-L9IreW7zjQ2dmbRQsoUx9UwIhY3-n4v--YSy4gw3s6KVuQLvDnRoGJNS0heO13RQr5-rSsQ', 2000, NULL, '2023-10-25 09:15:43'),
-(4, 1, 'youtube', 'UCFfozYKZZoCfh_Rs9gMujhQ', 'technology', 'technology', 'https://yt3.ggpht.com/ytc/APkrFKZXFiTCCxbhxXfRcKFRhOaYzS0vBwSrqko1PsRT38ibgk9arbawHBA_hpYP5Bx_=s88-c-k-c0x00ffffff-no-rj', 'https://www.youtube.com/channel/UCFfozYKZZoCfh_Rs9gMujhQ', 'ya29.a0AfB_byBUACPTfdNtRCmAiMr_eYkrkWW4KSOlyRgfLzejkBx9l-DoYOFkIFWNs8_R8VcW5T29axznpUg0MAvcI5u7b9BVYfpFKQJR7bOOAMuHkS2KrxEadYx0fLs8XoYnC0ruI5uUpS8-Zx2nAGcM97Eis4RODDME62qiaCgYKAfwSARISFQGOcNnCx-0_jKdMBT_4zR1_UqaECA0171', '1//03h13L1uysOhoCgYIARAAGAMSNwF-L9IrF5DkpJsEWl-htt72G-PML1W4FTttjfFe12DO2hNDILkEcg9jmwXDoNAQ3LvEKv0yQQo', 2000, '2023-10-25 08:57:09', '2023-10-25 09:15:43');
+(4, 1, 'youtube', 'UCFfozYKZZoCfh_Rs9gMujhQ', 'technology', 'technology', 'https://yt3.ggpht.com/ytc/APkrFKZXFiTCCxbhxXfRcKFRhOaYzS0vBwSrqko1PsRT38ibgk9arbawHBA_hpYP5Bx_=s88-c-k-c0x00ffffff-no-rj', 'https://www.youtube.com/channel/UCFfozYKZZoCfh_Rs9gMujhQ', 'ya29.a0AfB_byBUACPTfdNtRCmAiMr_eYkrkWW4KSOlyRgfLzejkBx9l-DoYOFkIFWNs8_R8VcW5T29axznpUg0MAvcI5u7b9BVYfpFKQJR7bOOAMuHkS2KrxEadYx0fLs8XoYnC0ruI5uUpS8-Zx2nAGcM97Eis4RODDME62qiaCgYKAfwSARISFQGOcNnCx-0_jKdMBT_4zR1_UqaECA0171', '1//03h13L1uysOhoCgYIARAAGAMSNwF-L9IrF5DkpJsEWl-htt72G-PML1W4FTttjfFe12DO2hNDILkEcg9jmwXDoNAQ3LvEKv0yQQo', 2000, '2023-10-25 08:57:09', '2023-10-25 09:15:43'),
+(7, 3, 'twitter', '1708817086653386752', 'EvolveTeck', 'EvolveTeck', NULL, 'https://twitter.com/intent/user?user_id=1708817086653386752', '1708817086653386752-WRyD6t3aHPtXsqQeyjokEhdjOlnrYq', '8MdlSMKR1hkgAsOKTPhMttQTZKFRoGmTs4GrPYFMEokNY', 2000, '2023-10-25 07:05:15', '2023-10-25 09:15:43'),
+(8, 3, 'youtube', 'UCFfozYKZZoCfh_Rs9gMujhQ', 'technology', 'technology', 'https://yt3.ggpht.com/ytc/APkrFKZXFiTCCxbhxXfRcKFRhOaYzS0vBwSrqko1PsRT38ibgk9arbawHBA_hpYP5Bx_=s88-c-k-c0x00ffffff-no-rj', 'https://www.youtube.com/channel/UCFfozYKZZoCfh_Rs9gMujhQ', 'ya29.a0AfB_byBUACPTfdNtRCmAiMr_eYkrkWW4KSOlyRgfLzejkBx9l-DoYOFkIFWNs8_R8VcW5T29axznpUg0MAvcI5u7b9BVYfpFKQJR7bOOAMuHkS2KrxEadYx0fLs8XoYnC0ruI5uUpS8-Zx2nAGcM97Eis4RODDME62qiaCgYKAfwSARISFQGOcNnCx-0_jKdMBT_4zR1_UqaECA0171', '1//03h13L1uysOhoCgYIARAAGAMSNwF-L9IrF5DkpJsEWl-htt72G-PML1W4FTttjfFe12DO2hNDILkEcg9jmwXDoNAQ3LvEKv0yQQo', 2000, '2023-10-25 08:57:09', '2023-10-25 09:15:43');
 
 -- --------------------------------------------------------
 
@@ -235,7 +237,8 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (2, 'App\\Models\\User', 2, 'Api Token', '6b87e3b5b90097c6cb0cbb01d74d2ccb94a83497cc6c84d0863d2dd8f39ef3bc', '[\"*\"]', NULL, NULL, '2023-10-29 07:21:57', '2023-10-29 07:21:57'),
 (3, 'App\\Models\\User', 2, 'API TOKEN', '511c09f487763b6b04bd394ea84dfef06d7a30a37c8dcb863101089d067e4007', '[\"*\"]', NULL, NULL, '2023-10-29 07:24:03', '2023-10-29 07:24:03'),
 (4, 'App\\Models\\User', 2, 'API TOKEN', '2cf261070b633fb87edff4ac48febafb3289ef01a630ad4f335dfb0a631c049e', '[\"*\"]', NULL, NULL, '2023-10-29 07:48:57', '2023-10-29 07:48:57'),
-(6, 'App\\Models\\User', 3, 'API TOKEN', '2aa0e790f0f40ad407d7eea550bbcf1e89383aeb550b7c4da01b417405dcf5f0', '[\"*\"]', '2023-10-29 13:22:26', NULL, '2023-10-29 09:28:38', '2023-10-29 13:22:26');
+(6, 'App\\Models\\User', 3, 'API TOKEN', '2aa0e790f0f40ad407d7eea550bbcf1e89383aeb550b7c4da01b417405dcf5f0', '[\"*\"]', '2023-10-30 12:49:26', NULL, '2023-10-29 09:28:38', '2023-10-30 12:49:26'),
+(12, 'App\\Models\\User', 4, 'API TOKEN', '6e69bf39b8d9ebce27e572ea8204eb64ff78d175f252489cad94a65ef21e8e8d', '[\"*\"]', '2023-10-30 13:06:55', NULL, '2023-10-30 13:06:46', '2023-10-30 13:06:55');
 
 -- --------------------------------------------------------
 
@@ -301,7 +304,8 @@ CREATE TABLE `publish_posts` (
 INSERT INTO `publish_posts` (`id`, `creator_id`, `account_type`, `account_id`, `account_name`, `status`, `thumbnail`, `link`, `post_title`, `content`, `youtube_privacy`, `youtube_tags`, `youtube_category`, `scheduledTime`, `tokenApp`, `token_secret`, `created_at`, `updated_at`) VALUES
 (1, 1, 'twitter', '1708817086653386752', 'EvolveTeck', 'published', NULL, NULL, NULL, 'k2', NULL, NULL, NULL, '2023-10-26 12:23:00', '1708817086653386752-WRyD6t3aHPtXsqQeyjokEhdjOlnrYq', '8MdlSMKR1hkgAsOKTPhMttQTZKFRoGmTs4GrPYFMEokNY', '2023-10-26 09:23:09', '2023-10-26 09:23:09'),
 (2, 1, 'youtube', 'UCDtui0aBpRnx1eNAzq7eUHQ', 'evovle inc', 'published', 'uploadVideos/vecteezy_square-shape-tech-background-hud-small-squares-shape-loop_13449649_472.mp4', NULL, 'youtube', 'youtube_desc', 'public', 'k', NULL, '2023-10-29 14:52:45', 'ya29.a0AfB_byB9ZUyzCgAo7b5FlMknnV7SYCrX4pzdzpaoFipC-TEMt6KCD4v-JXsvVoPi_usZwGMVp-agZb8wHLbpiCP8Td-FjN9FBdM-EYMznCVO0FqqpwoxmEwLEttzPlvUHjz-L6KKeMs64dnJuwqwZE6u0apzFxSAyyemaCgYKAW0SARMSFQGOcNnCiGhnaAspFUBNCMq', '1//03OvEbi37WB3TCgYIARAAGAMSNwF-L9IreW7zjQ2dmbRQsoUx9UwIhY3-n4v--YSy4gw3s6KVuQLvDnRoGJNS0heO13RQr5-rSsQ', '2023-10-26 09:47:35', '2023-10-26 09:47:35'),
-(3, 3, 'facebook', 'UCDtui0aBpRnx1eNAzq7eUHQ', 'evovle inc', 'published', 'uploadVideos/vecteezy_square-shape-tech-background-hud-small-squares-shape-loop_13449649_472.mp4', NULL, 'youtube', 'youtube_desc', 'public', 'k', NULL, '2023-10-29 15:34:57', 'ya29.a0AfB_byB9ZUyzCgAo7b5FlMknnV7SYCrX4pzdzpaoFipC-TEMt6KCD4v-JXsvVoPi_usZwGMVp-agZb8wHLbpiCP8Td-FjN9FBdM-EYMznCVO0FqqpwoxmEwLEttzPlvUHjz-L6KKeMs64dnJuwqwZE6u0apzFxSAyyemaCgYKAW0SARMSFQGOcNnCiGhnaAspFUBNCMq', '1//03OvEbi37WB3TCgYIARAAGAMSNwF-L9IreW7zjQ2dmbRQsoUx9UwIhY3-n4v--YSy4gw3s6KVuQLvDnRoGJNS0heO13RQr5-rSsQ', '2023-10-26 09:47:35', '2023-10-26 09:47:35');
+(3, 3, 'facebook', 'UCDtui0aBpRnx1eNAzq7eUHQ', 'evovle inc', 'published', 'uploadVideos/vecteezy_square-shape-tech-background-hud-small-squares-shape-loop_13449649_472.mp4', NULL, 'youtube', 'youtube_desc', 'public', 'k', NULL, '2023-10-29 15:34:57', 'ya29.a0AfB_byB9ZUyzCgAo7b5FlMknnV7SYCrX4pzdzpaoFipC-TEMt6KCD4v-JXsvVoPi_usZwGMVp-agZb8wHLbpiCP8Td-FjN9FBdM-EYMznCVO0FqqpwoxmEwLEttzPlvUHjz-L6KKeMs64dnJuwqwZE6u0apzFxSAyyemaCgYKAW0SARMSFQGOcNnCiGhnaAspFUBNCMq', '1//03OvEbi37WB3TCgYIARAAGAMSNwF-L9IreW7zjQ2dmbRQsoUx9UwIhY3-n4v--YSy4gw3s6KVuQLvDnRoGJNS0heO13RQr5-rSsQ', '2023-10-26 09:47:35', '2023-10-26 09:47:35'),
+(5, 3, 'twitter', '1708817086653386752', 'EvolveTeck', 'pending', '', NULL, NULL, 'data3', NULL, NULL, NULL, '2023-10-30 14:30:00', '1708817086653386752-WRyD6t3aHPtXsqQeyjokEhdjOlnrYq', '8MdlSMKR1hkgAsOKTPhMttQTZKFRoGmTs4GrPYFMEokNY', '2023-10-30 08:46:43', '2023-10-30 11:16:16');
 
 -- --------------------------------------------------------
 
@@ -324,7 +328,8 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `role_color`, `created_at`, `updated_at`) VALUES
 (1, 'Adminstrator', 'web', 'danger', '2023-10-25 09:13:43', '2023-10-26 05:25:56'),
-(2, 'User', 'web', 'success', '2023-10-25 09:14:15', '2023-10-25 09:14:23');
+(2, 'User', 'web', 'dark', '2023-10-25 09:14:15', '2023-10-30 11:46:56'),
+(5, 'Userss', 'sanctum', 'primary', '2023-10-30 11:50:41', '2023-10-30 11:50:41');
 
 -- --------------------------------------------------------
 
@@ -427,7 +432,8 @@ CREATE TABLE `time_thinks` (
 --
 
 INSERT INTO `time_thinks` (`id`, `creator_id`, `time`, `created_at`, `updated_at`) VALUES
-(1, 1, 3, NULL, NULL);
+(1, 1, 3, NULL, NULL),
+(2, 3, 3, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -454,9 +460,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `user_type`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role_for_messages`, `status_for_messages`) VALUES
-(1, 'Admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$5qKXtOeHE.Jd9rgSQDt1XOWb9v1009OftzWANnCSEIFQVOSLvDW0S', NULL, '2023-10-12 06:59:55', '2023-10-29 09:46:39', 'admin', 'online'),
+(1, 'Admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$5qKXtOeHE.Jd9rgSQDt1XOWb9v1009OftzWANnCSEIFQVOSLvDW0S', NULL, '2023-10-12 06:59:55', '2023-10-30 13:42:14', 'admin', 'offline'),
 (2, 'omnia', 'user', 'omnia@gmail.com', NULL, '$2y$10$3/HPaEOX2QkUKsB/aYW4eOnS5WqBbYc3oe6Fk3rtdDEjtIY1a47s6', NULL, '2023-10-29 07:21:57', '2023-10-29 07:21:57', 'user', 'offline'),
-(3, 'omnia', 'user', 'omnia2@gmail.com', NULL, '$2y$10$mvI.NFC6E8d0ZnyDtmHMNuX55GslumewMhnHj1KKRV8uX777U/pse', NULL, '2023-10-29 09:13:11', '2023-10-29 09:44:09', 'user', 'offline');
+(3, 'omnia', 'user', 'omnia2@gmail.com', NULL, '$2y$10$mvI.NFC6E8d0ZnyDtmHMNuX55GslumewMhnHj1KKRV8uX777U/pse', NULL, '2023-10-29 09:13:11', '2023-10-29 09:44:09', 'user', 'offline'),
+(4, 'ali', 'user', 'ali@gmail.com', NULL, '$2y$10$iYGGh88fRuDMHyHv8RsnmefXO5SR2irDt7aBNln697Fd2w/f4/7Va', NULL, '2023-10-30 12:53:25', '2023-10-30 12:53:25', 'user', 'offline');
 
 -- --------------------------------------------------------
 
@@ -668,7 +675,7 @@ ALTER TABLE `youtube_categories`
 -- AUTO_INCREMENT for table `apis`
 --
 ALTER TABLE `apis`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -704,7 +711,7 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `post_images`
@@ -722,13 +729,13 @@ ALTER TABLE `post_videos`
 -- AUTO_INCREMENT for table `publish_posts`
 --
 ALTER TABLE `publish_posts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `settings_apis`
@@ -746,13 +753,13 @@ ALTER TABLE `social_posts`
 -- AUTO_INCREMENT for table `time_thinks`
 --
 ALTER TABLE `time_thinks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_has_roles`
