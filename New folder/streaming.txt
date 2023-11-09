@@ -1,0 +1,33 @@
+<video width="640" height="360" controls>
+    <source src="{{ route('video.stream', ['id' => $video->id]) }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+
+
+Upload Videos:
+You need a way to upload videos to your application. You can use a package like laravelcollective/html for file uploads, or create your own form to upload videos.
+
+Store Videos:
+Save the uploaded videos to a directory on your server. You can configure this in your config/filesystems.php file, typically using the public disk. Store the video file's path in your database.
+
+
+
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+
+public function stream($id)
+{
+    $video = Video::find($id);
+
+    if (!$video) {
+        abort(404);
+    }
+
+    $videoPath = Storage::disk('public')->path($video->file_path);
+
+    return (new BinaryFileResponse($videoPath))
+        ->header('Content-Type', 'video/mp4')
+        ->header('Content-Length', filesize($videoPath));
+}
