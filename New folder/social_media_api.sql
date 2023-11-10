@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2023 at 04:57 PM
+-- Generation Time: Nov 11, 2023 at 12:51 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -183,7 +183,11 @@ CREATE TABLE `news_letters` (
 --
 
 INSERT INTO `news_letters` (`id`, `creator_id`, `title`, `content`, `image`, `created_at`, `updated_at`) VALUES
-(1, 1, 'vfgfdgfgfg', 'fgfg', '', '2023-11-09 12:37:24', '2023-11-09 12:37:24');
+(1, 1, 'Card title that wraps to a new line', 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.', '/storage/uploadImages/5.jpg', '2023-11-09 12:37:24', '2023-11-10 20:33:31'),
+(2, 1, 'A well-known quote, contained in a blockquote element.', '- Someone famous in Source Title', NULL, '2023-11-09 12:37:24', '2023-11-09 12:37:24'),
+(3, 1, 'Card title that wraps to a new line', 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.', '/storage/uploadImages/18.jpg', '2023-11-09 12:37:24', '2023-11-09 12:37:24'),
+(4, 1, 'A well-known quote, contained in a blockquote element.', 'This card has supporting text below as a natural lead-in to additional content.', NULL, '2023-11-09 12:37:24', '2023-11-09 12:37:24'),
+(6, 1, 'Card title that wraps to a new line', 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.', '/storage/uploadImages/1.jpg', '2023-11-09 12:37:24', '2023-11-09 12:37:24');
 
 -- --------------------------------------------------------
 
@@ -497,7 +501,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `user_type`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role_for_messages`, `status_for_messages`) VALUES
-(1, 'Admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$iRr8cmPtYzvj7BoHB1Y5d.QxvqgFjD3OYC3ZXwLqTjp6Y1JMezwlO', '6EqPhqSIvuGqthVIuJ9WbFYcKCVlGbrL7K8nkZhZtmpLCim9eAIjBDa7T77j', '2023-11-07 07:07:42', '2023-11-08 10:21:39', 'admin', 'online'),
+(1, 'Ahmed', 'admin', 'admin@gmail.com', NULL, '$2y$10$iRr8cmPtYzvj7BoHB1Y5d.QxvqgFjD3OYC3ZXwLqTjp6Y1JMezwlO', '8wG944tirFFVVO2ZDzB4y1rTNKo2mwJMMqgZwTssasq4P6rjidxLYx7Z6OSu', '2023-11-07 07:07:42', '2023-11-09 19:28:49', 'admin', 'online'),
 (2, 'ali', 'user', 'ali@gmail.com', NULL, '$2y$10$iRr8cmPtYzvj7BoHB1Y5d.QxvqgFjD3OYC3ZXwLqTjp6Y1JMezwlO', 'ikJEDiKohXrNNhpAXKnyUm530yloAXhdEf4iuF9j2Raj0TRhoU4wVx5J8yby', '2023-11-07 07:07:42', '2023-11-08 10:21:31', 'user', 'offline');
 
 -- --------------------------------------------------------
@@ -743,7 +747,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `news_letters`
 --
 ALTER TABLE `news_letters`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `permissions`
